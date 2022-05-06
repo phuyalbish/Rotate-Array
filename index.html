@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h2>Slides:</h2>
+    <div class="container" id="only_Container">
+            
+    </div>
+
+
+    <!-- Add Button -->
+    <div class="button_container">
+    <!-- Add PopUp -->
+    <div class="add_popup" >
+        <input type="text" name="name" id="name" placeholder="Enter the name of slide">
+    </div>
+        <button id="button" class="add_button">
+            <div class="color"></div>
+            Add</button>
+    </div>
+<!------------------------------------>
+
+
+    <!-- Sort -->
+    <div class="sort_container">
+        <button id="button" class="sort_button">
+            <div class="sort_color"></div>
+            Sort</button>
+
+        <!-- Add PopUp -->
+        <div class="sort_popup" >
+            <button onclick="left()" class="button">top</button>
+            <button onclick="right()" class="button">bottom</button>
+            <input type="range" name="range" id="range" max="10" min="1" />
+            <p id="range_value"></p>
+        </div>
+    </div>
+
+    <p id="aa"></p>
+
+    
+</body>
+<script src="main.js"></script>
+</html>
